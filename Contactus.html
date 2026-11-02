@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Mama Haba - Get in touch with us for inquiries, orders, or support in Centurion, Pretoria.">
+    <meta name="keywords" content="Mama Haba, Contact, Habanero, Hot Sauce, Chili Sauce, Pretoria, Centurion">
+    <title>Contact Us | Mama Haba Chili Sauce</title>
+    <!-- Linked to the exact same stylesheet as the homepage -->
+    <link rel="stylesheet" href="ContactUsStyle.css">
+</head>
+<body>
+<header>
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="logo-container top-left">
+            <img src="/Users/chabomoalosi/Desktop/WEDE ICE TASK 3/NewPersonalSite/MamaHaba.png" alt="Mama Haba Habanero Sauce Logo" class="brand-logo" width="100" height="100">
+        </div>
+        <ul class="nav-links">
+            <li><a href="mysite.html">Home</a></li>
+            <li><a href="Contactus.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+    <hr class="custom-line1">
+</header>
+
+<main>
+    <section class="contact-hero" style="text-align: center;">
+        <h1>Get in Touch</h1>
+        <p class="hero-text">Have questions, feedback, or custom order requests? We’d love to hear from you!</p>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-grid">
+        <div class="contact-card">
+            <strong> Location:</strong> Centurion, Pretoria, South Africa
+        </div>
+        <div class="contact-card">
+            <strong>📞 Phone / WhatsApp:</strong> <a href="tel:0634217025">063 421 7025</a>
+        </div>
+        <div class="contact-card">
+            <strong>✉️ Email:</strong> <a href="mailto:info@mamahaba.co.za">info@mamahaba.co.za</a>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <div class="form-container">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                <small class="error-message" id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="name@example.com">
+                <small class="error-message" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number (Optional):</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 0634217025">
+                <small class="error-message" id="phoneError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+                <small class="error-message" id="messageError"></small>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+            <p id="successMessage" class="success-text" style="display: none;"></p>
+        </form>
+    </div>
+</main>
+
+<hr class="custom-line2">
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo bottom-left">
+            <img src="MamaHaba.jpg" alt="Mama Haba Logo" class="brand-logo" width="80" height="80">
+        </div>
+        <p>&copy; 2026 Mama Haba Chili Sauce. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Linked to existing JS script for form validation -->
+<script src="style.js"></script>
+</body>
+</html>

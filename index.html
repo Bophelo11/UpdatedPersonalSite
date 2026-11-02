@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mama Haba - Premium handcrafted Habanero chili sauces in Centurion, Pretoria. Home of fresh, fiery habanero flavor.">
+    <meta name="keywords" content="Mama Haba, Habanero, Hot Sauce, Chili Sauce, Pretoria, Centurion">
+    <title>Home | Mama Haba Chili Sauce</title>
+    <link rel="stylesheet" href="ContactUsStyle.css">
+</head>
+<body>
+<header>
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="logo-container top-left">
+            <img src="/Users/chabomoalosi/Desktop/WEDE ICE TASK 3/NewPersonalSite/MamaHaba.png" alt="Mama Haba Habanero Sauce Logo" class="brand-logo" width="100" height="100">
+        </div>
+        <ul class="nav-links">
+            <li><a href="mysite.html" class="active">Home</a></li>
+            <li><a href="Contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <hr class="custom-line1">
+</header>
+
+<main>
+    <!-- Slideshow Section -->
+    <section class="slideshow-container" aria-label="Featured Products Slideshow">
+        <div class="slider-track">
+            <div class="slide active">
+                <img src="/Users/chabomoalosi/Desktop/WEDE ICE TASK 3/NewPersonalSite/istockphoto-2163070577-612x612.webp" alt="Mama Haba Chili Sauce Bottle Range">
+                <img src="/Users/chabomoalosi/Desktop/WEDE ICE TASK 3/NewPersonalSite/four-different-chili-sauce-bottles_1308-119747.webp" alt="Mama Haba Chili Sauce Bottle Range">
+
+                <div class="slide-caption">Explore Our Fiery Range</div>
+            </div>
+            <div class="slide">
+                <img src="istockphoto-181456399-612x612.jpg" alt="Cool Chili Character Cooking Hot Sauce">
+                <div class="slide-caption">Handcrafted with Passion & Heat</div>
+            </div>
+            <div class="slide">
+                <img src="istockphoto-2163070577-612x612.jpg" alt="Fresh Red Habanero Chili Pepper">
+                <div class="slide-caption">100% Fresh Habanero Ingredients</div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button id="prevBtn" class="slider-btn prev-btn" aria-label="Previous Slide">&#10094;</button>
+        <button id="nextBtn" class="slider-btn next-btn" aria-label="Next Slide">&#10095;</button>
+
+        <!-- Navigation Dots -->
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <hr class="custom-line2">
+
+    <!-- Welcome Section -->
+    <section class="welcome-section" style="text-align: center;">
+        <h1>Welcome to Mama Haba</h1>
+        <p class="hero-text">Taste the ultimate balance of rich flavor and authentic Habanero heat. Prepared fresh in Centurion, Pretoria.</p>
+    </section>
+
+    <!-- Quick Order Form -->
+    <div class="form-container">
+        <h2>Quick Sauce Inquiry & Order Form</h2>
+        <form id="homeOrderForm" novalidate>
+            <div class="form-group">
+                <label for="homeName">Full Name:</label>
+                <input type="text" id="homeName" name="homeName" required placeholder="Enter your name">
+                <small class="error-message" id="homeNameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="homeEmail">Email Address:</label>
+                <input type="email" id="homeEmail" name="homeEmail" required placeholder="name@example.com">
+                <small class="error-message" id="homeEmailError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="sauceSelection">Select Bottle Size / Package:</label>
+                <select id="sauceSelection" name="sauceSelection">
+                    <option value="300ml">300ml Bottle</option>
+                    <option value="500ml">500ml Bottle</option>
+                    <option value="1L">1-Litre Bulk Pack</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">Place Quick Order</button>
+            <p id="homeSuccessMessage" class="success-text" style="display: none;"></p>
+        </form>
+    </div>
+</main>
+
+<hr class="custom-line2">
+
+<footer>
+    <div class="footer-container">
+        <!-- Bottom Left Logo -->
+        <div class="footer-logo bottom-left">
+            <img src="MamaHaba.jpg" alt="Mama Haba Logo" class="brand-logo" width="80" height="80">
+        </div>
+        <p>&copy; 2026 Mama Haba Chili Sauce. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="style.js"></script>
+</body>
+</html>
